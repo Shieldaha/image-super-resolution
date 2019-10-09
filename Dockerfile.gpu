@@ -27,4 +27,4 @@ RUN pip install --upgrade pip
 RUN pip install -e ".[gpu]" --ignore-installed
 
 ENV PYTHONPATH ./ISR/:$PYTHONPATH
-ENTRYPOINT ["py", "./sr.py"]
+ENTRYPOINT ["sh", "./scripts/entrypoint.sh"]
