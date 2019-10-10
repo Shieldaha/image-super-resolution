@@ -104,7 +104,10 @@ rdn.model.load_weights('weights/sample_weights/rdn-C6-D20-G64-G064-x2/ArtefactCa
 sr_img = rdn.predict(lr_img)
 Image.fromarray(sr_img)
 ```
-
+```
+Docker run file
+make run INPUT=`pwd`/input_file OUTPUT=`pwd`/output_file GPUS=gpus
+```
 #### Large image inference
 To predict on large images and avoid memory allocation errors, use the `by_patch_of_size` option for the predict method, for instance
 ```
