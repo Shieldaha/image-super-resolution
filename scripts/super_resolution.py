@@ -9,8 +9,8 @@ from ISR.models import RDN
 rdn = RDN(arch_params={'C':6, 'D':20, 'G':64, 'G0':64, 'x':2})
 rdn.model.load_weights('weights/sample_weights/ArtefactCancelling/rdn-C6-D20-G64-G064-x2_ArtefactCancelling_epoch219.hdf5') #change the weight folder
 
-input_folder = sys.argv[1]
-output_folder = sys.argv[2]
+input_folder = '/input'
+output_folder = '/output'
 
 def super_resolution(input_folder,output_folder):
     if not exists(output_folder):
