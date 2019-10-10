@@ -105,7 +105,8 @@ sr_img = rdn.predict(lr_img)
 Image.fromarray(sr_img)
 ```
 ```
-Docker run file
+Docker run file (Makefile)
+make build
 make run INPUT=`pwd`/input_file OUTPUT=`pwd`/output_file GPUS=gpus
 ```
 #### Large image inference
